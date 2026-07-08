@@ -10,7 +10,7 @@
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-  background: var(--coral);
+  background: #103931;
   border: none;
   border-radius: var(--radius-pill);
   transition:
@@ -19,6 +19,6 @@
 }
 
 .button:hover {
-  background: var(--coral-dark);
+  background: #0b2a24;
   transform: translateY(-1px);
 }

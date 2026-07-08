@@ -95,7 +95,7 @@
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: #fbfbfb;
-  background: var(--coral);
+  background: #103931;
   border: none;
   border-radius: 30px;
   transition:
@@ -104,7 +104,7 @@
 }
 
 .submit:hover:not(:disabled) {
-  background: var(--coral-dark);
+  background: #0b2a24;
 }
 
 .submit:disabled {

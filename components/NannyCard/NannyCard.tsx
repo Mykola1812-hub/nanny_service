@@ -47,7 +47,12 @@ export default function NannyCard({ nanny }: NannyCardProps) {
 
             <div className={css.stats}>
               <span className={css.stat}>
-                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
                   <path
                     d="M12 21s-7-6-7-11a7 7 0 1114 0c0 5-7 11-7 11z"
                     fill="none"

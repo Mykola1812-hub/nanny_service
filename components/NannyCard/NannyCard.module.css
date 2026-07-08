@@ -1,5 +1,6 @@
 .card {
   display: flex;
+  position: relative;
   gap: 24px;
   padding: 24px;
   background: var(--surface);
@@ -149,14 +150,14 @@
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-  background: var(--coral);
+  background: #103931;
   border: none;
   border-radius: var(--radius-pill);
   transition: background 0.15s ease;
 }
 
 .appointment:hover {
-  background: var(--coral-dark);
+  background: #0b2a24;
 }
 
 @keyframes reveal {
