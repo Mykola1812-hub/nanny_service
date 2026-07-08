@@ -1,0 +1,31 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-pill);
+  transition:
+    color 0.15s ease,
+    transform 0.1s ease,
+    background 0.15s ease;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--chip);
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+.active {
+  color: var(--coral);
+}

@@ -1,0 +1,85 @@
+.wrapper {
+  position: relative;
+  width: 226px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+  padding: 0 18px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--emerald);
+  border: none;
+  border-radius: 14px;
+  transition: background 0.15s ease;
+}
+
+.trigger:hover {
+  background: var(--emerald-dark);
+}
+
+.chevron,
+.chevronOpen {
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.option {
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 15px;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+.option:hover {
+  color: var(--ink);
+  background: var(--emerald-soft);
+}
+
+.selected {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    width: 100%;
+  }
+}

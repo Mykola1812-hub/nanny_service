@@ -1,0 +1,37 @@
+.footer {
+  margin-top: 64px;
+  background: #101d19;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.content {
+  width: 90%;
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 28px 0;
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.copy {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 520px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+}

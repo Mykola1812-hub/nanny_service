@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "nannies": {
+      ".read": true,
+      ".write": false
+    },
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    },
+    "appointments": {
+      ".read": false,
+      ".write": "auth != null"
+    }
+  }
+}

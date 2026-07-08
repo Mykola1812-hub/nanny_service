@@ -1,0 +1,194 @@
+.card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.avatarBox {
+  position: relative;
+  flex-shrink: 0;
+  width: 108px;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(234, 108, 77, 0.35);
+  border-radius: 20px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.online {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  background: #3fd07f;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.role {
+  margin: 0 0 2px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.stat svg {
+  color: var(--muted);
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background: var(--line);
+}
+
+.star {
+  color: var(--star);
+}
+
+.price {
+  color: var(--price);
+  font-weight: 600;
+}
+
+.chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 16px;
+  padding: 0;
+}
+
+.chip {
+  padding: 8px 14px;
+  font-size: 14px;
+  color: var(--muted);
+  background: var(--chip);
+  border-radius: var(--radius-pill);
+}
+
+.chip strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.about {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.readMore {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.details {
+  animation: reveal 0.25s ease;
+}
+
+.appointment {
+  margin-top: 28px;
+  height: 52px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--coral);
+  border: none;
+  border-radius: var(--radius-pill);
+  transition: background 0.15s ease;
+}
+
+.appointment:hover {
+  background: var(--coral-dark);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (max-width: 720px) {
+  .card {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .stats {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .name {
+    font-size: 21px;
+  }
+
+  .chip {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+
+  .appointment {
+    width: 100%;
+  }
+}

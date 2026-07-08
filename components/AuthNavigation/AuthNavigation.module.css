@@ -1,0 +1,110 @@
+.guestBox,
+.userBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.placeholder {
+  width: 200px;
+  height: 44px;
+}
+
+.loginButton,
+.registerButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  border-radius: 30px;
+  transition:
+    background 0.15s ease,
+    transform 0.1s ease;
+}
+
+.loginButton {
+  padding: 14px 32px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.loginButton:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.registerButton {
+  width: 168px;
+  padding: 14px 40px;
+  background: var(--emerald);
+  border: 1px solid transparent;
+}
+
+.registerButton:hover {
+  background: #1a5045;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-weight: 700;
+  color: var(--emerald);
+  background: #fff;
+  border-radius: 12px;
+}
+
+.userName {
+  font-weight: 600;
+  color: #fff;
+}
+
+.logoutButton {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-pill);
+  transition: background 0.15s ease;
+}
+
+.logoutButton:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 720px) {
+  .guestBox,
+  .userBox {
+    order: 2;
+  }
+
+  .placeholder {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .loginButton,
+  .registerButton {
+    padding: 0 16px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .registerButton {
+    width: auto;
+  }
+
+  .userName {
+    display: none;
+  }
+}
